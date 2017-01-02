@@ -1,15 +1,11 @@
-/// <reference path="../typings/index.d.ts" />
-/* tslint:enabled */
-
 "use strict";
 
-const XTAG = require("../node_modules/x-tag/dist/x-tag-core-with-shadowdom.min.js")
-const JQUERY = require("../node_modules/jquery/dist/jquery.min.js")
+var XTAG = require("../node_modules/x-tag/dist/x-tag-core-with-shadowdom.min.js");
 
-export function XTagAutoScroll (delay, height, content) {
+var JQUERY = require("../node_modules/jquery/dist/jquery.min.js");
 
-    JQUERY(document).ready(() => {
-
+function XTagAutoScroll(delay, height, content) {
+    JQUERY(document).ready(function() {
         XTAG.register("x-tag-autoscroll", {
             content: content || "",
             lifecycle: {
@@ -17,18 +13,19 @@ export function XTagAutoScroll (delay, height, content) {
                     setTimeout(function() {
                         JQUERY("html, body").animate({
                             scrollTop: height || 300
-                        }, 1000)
-                    }, delay || 5000)
+                        }, 1e3);
+                    }, delay || 5e3);
                 }
             },
             events: {
                 tap: function() {
                     JQUERY("html, body").animate({
                         scrollTop: height || 300
-                    }, 1000)
+                    }, 1e3);
                 }
             }
-        })
-
-    })
+        });
+    });
 }
+
+exports.XTagAutoScroll = XTagAutoScroll;

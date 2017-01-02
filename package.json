@@ -4,11 +4,11 @@
   "description": "A simple component autoscrolls to a certain height after a specified delay.",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine -w"
+    "test": "node_modules/.bin/jasmine -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ispyhumanfly/x-tag-component-autoscroll.git"
+    "url": "git+https://github.com/ispyhumanfly/x-tag-autoscroll.git"
   },
   "keywords": [
     "x-tag",
@@ -21,18 +21,25 @@
     "ui",
     "ux",
     "web",
-    "components"
+    "components",
+    "custom",
+    "elements"
   ],
   "author": "Dan Stephenson (ispyhumanfly)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ispyhumanfly/x-tag-component-autoscroll/issues"
+    "url": "https://github.com/ispyhumanfly/x-tag-autoscroll/issues"
   },
-  "homepage": "https://github.com/ispyhumanfly/x-tag-component-autoscroll#readme",
+  "homepage": "https://github.com/ispyhumanfly/x-tag-autoscroll#readme",
   "dependencies": {
+    "browserify": "^13.1.1",
     "jasmine": "^2.5.2",
+    "jquery": "^3.1.1",
+    "shelljs": "^0.7.5",
+    "tslint": "^4.2.0",
     "typescript": "^2.1.4",
     "typings": "^2.1.0",
+    "uglify-js": "^2.7.5",
     "x-tag": "^1.5.11"
   }
 }

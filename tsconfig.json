@@ -2,13 +2,14 @@
   "compilerOptions": {
       "target": "es5",
       "module": "es2015",
-      "sourceMap": true,
+      "sourceMap": false,
       "removeComments": true,
 	    "experimentalDecorators" : true
   },
   "exclude": [
       "node_modules",
-      "typings"
+      "typings",
+      "dist"
   ],
   "compileOnSave": true
 }
