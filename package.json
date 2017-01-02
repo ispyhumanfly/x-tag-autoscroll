@@ -1,0 +1,38 @@
+{
+  "name": "x-tag-component-autoscroll",
+  "version": "1.0.0",
+  "description": "A simple component autoscrolls to a certain height after a specified delay.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ispyhumanfly/x-tag-component-autoscroll.git"
+  },
+  "keywords": [
+    "x-tag",
+    "components",
+    "autoscroll",
+    "animation",
+    "effects",
+    "typescript",
+    "javascript",
+    "ui",
+    "ux",
+    "web",
+    "components"
+  ],
+  "author": "Dan Stephenson (ispyhumanfly)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ispyhumanfly/x-tag-component-autoscroll/issues"
+  },
+  "homepage": "https://github.com/ispyhumanfly/x-tag-component-autoscroll#readme",
+  "dependencies": {
+    "jasmine": "^2.5.2",
+    "typescript": "^2.1.4",
+    "typings": "^2.1.0",
+    "x-tag": "^1.5.11"
+  }
+}
