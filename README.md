@@ -1,1 +1,1 @@
-# x-tag-component-autoscroll
+# x-tag-autoscroll
