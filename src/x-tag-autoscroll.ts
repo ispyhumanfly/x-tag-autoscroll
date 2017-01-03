@@ -3,28 +3,28 @@
 
 "use strict";
 
-const XTAG = require("../node_modules/x-tag/dist/x-tag-core-with-shadowdom.min.js")
-const JQUERY = require("../node_modules/jquery/dist/jquery.min.js")
+const XTAG = require("x-tag")
+const JQUERY = require("jquery")
 
-export function XTagAutoScroll (delay, height, content) {
+export function XTagAutoScroll (parameters: any) {
 
     JQUERY(document).ready(() => {
 
         XTAG.register("x-tag-autoscroll", {
-            content: content || "",
+            content: parameters.content || "",
             lifecycle: {
                 created: function() {
                     setTimeout(function() {
                         JQUERY("html, body").animate({
-                            scrollTop: height || 300
+                            scrollTop: parameters.height || 300
                         }, 1000)
-                    }, delay || 5000)
+                    }, parameters.delay || 5000)
                 }
             },
             events: {
                 tap: function() {
                     JQUERY("html, body").animate({
-                        scrollTop: height || 300
+                        scrollTop: parameters.height || 300
                     }, 1000)
                 }
             }
